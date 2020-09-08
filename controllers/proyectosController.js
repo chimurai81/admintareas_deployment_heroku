@@ -33,7 +33,7 @@ exports.nuevoProyecto = async (req,res) =>{
     const usuarioId = res.locals.usuario.id
 
     //hacemos la consulta por el idUsuario            //nombre de la tabla ,, //valor de la variable usuarioId
-    const proyectos = await Proyectos.findAll( { where: {usuarioId: usuarioId}}); //consultar al modelo "proyecto" y trae todos los datos
+    const proyectos = await Proyectos.findAll( { where: { usuarioId }}); //consultar al modelo "proyecto" y trae todos los datos
     //req.body podemos ver los datos que  envia el formulario 
     //onsole.log(req.body);
 
