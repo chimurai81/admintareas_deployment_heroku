@@ -22,7 +22,7 @@ exports.formularioProyecto = async (req, res) =>{
 
    //hacemos la consulta por el idUsuario            //nombre de la tabla ,, //valor de la variable usuarioId
    const proyectos = await Proyectos.findAll( { where: {usuarioId: usuarioId}}); //consultar al modelo "proyecto" y trae todos los datos
-    res.renderFile('nuevoProyecto', {
+    res.render('nuevoProyecto', {
         nombrePagina: "Nuevo Proyecto",
         proyectos
     });
