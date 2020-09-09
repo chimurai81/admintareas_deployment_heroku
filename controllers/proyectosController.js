@@ -38,7 +38,7 @@ exports.nuevoProyecto = async (req,res) =>{
     //onsole.log(req.body);
 
     //validar que tengamos algo en el input
-    const { nombre = req.body.nombre } = req.body;
+    const nombre = req.body.nombre;
 
     let errores = []
     
