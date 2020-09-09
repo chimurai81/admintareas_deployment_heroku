@@ -7,7 +7,7 @@ const authController = require('../controllers/authController')
 const { body } = require('express-validator'); //importamos la validacion de express para el body tambien se puede para el params
 
 //estas son mis rutas
-module.exports = () => {
+module.exports =  function() {
 
     router.get('/',
         authController.usuarioAutenticado,
