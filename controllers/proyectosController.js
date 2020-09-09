@@ -48,7 +48,7 @@ exports.nuevoProyecto = async (req,res) =>{
 
     //si hay errores    
     if(errores.length > 0){
-        res.renderFile('nuevoProyecto', {
+        res.render('nuevoProyecto', {
             nombrePagina: 'Nuevo Proyecto',
             errores,
             proyectos
